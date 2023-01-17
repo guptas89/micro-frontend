@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-black: #000000;
+  --color-endeavor: #00539b;
+  --color-mine-shaft: #333333;
+  --color-dove-grey: #666666;
+  --type-size-xs: 0.75rem;
+  --border: #dddddd;
+}
+
+.mf-salesforce .mf-table {
+  --table-bg: var(--color-white);
+  --table-active-bg: var(--color-endeavor);
+  --table-active-color: var(--color-mine-shaft);
+  --table-hover-bg: var(--table-active-bg);
+  --table-head-cell-padding-y: 18px;
+  --table-cell-padding-x: 14px;
+  --table-cell-padding-y: 14px;
+  --table-font-size: var(--type-size-xs);
+  width: 100%;
+  background-color: var(--table-bg);
+  font-size: var(--table-font-size);
+}
+.mf-salesforce .mf-table-fixed-layout {
+  table-layout: fixed;
+}
+.mf-salesforce .mf-table__thead {
+  vertical-align: bottom;
+}
+.mf-salesforce .mf-table__th {
+  text-align: left;
+  border-top: 1px solid var(--border);
+  padding: var(--table-head-cell-padding-y) var(--table-cell-padding-x);
+}
+.mf-salesforce .mf-table__th-checkbox {
+  vertical-align: middle;
+}
+.mf-salesforce .mf-table__td {
+  padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+  text-align: left;
+}
+.mf-salesforce .mf-table__th, .mf-salesforce .mf-table__td {
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: var(--color-dove-grey);
+  line-height: 1.6;
+}
+.mf-salesforce .mf-table__th:first-child, .mf-salesforce .mf-table__td:first-child {
+  border-left: 1px solid var(--border);
+}
+.mf-salesforce .mf-table__th:last-child, .mf-salesforce .mf-table__td:last-child {
+  border-right: 1px solid var(--border);
+}
+.mf-salesforce .mf-table__tbody {
+  vertical-align: inherit;
+  display: table-row-group;
+}
